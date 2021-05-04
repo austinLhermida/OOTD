@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOTD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-wrap">
+        <header>
+            <!-- <h1 class="title">今日の衣装</h1> -->
+            <h1 class="title">Outfit of the Day</h1>
+        </header>
+        <header>
+            <input type="text" autocomplete="off" class="searchBox" 
+            placeholder="Enter a city">
+        </header>
+        <main>
+            <section class="location">
+                <div class="city"> </div>
+                <div class="date"> </div>
+            </section>
+
+            <div class="today">
+                <div class="temp"></div>
+                <div class="hi-low"></div>
+            </div>
+
+            <secton class="outfit">
+                <div class="topLayers">
+                    <div class="outerLayer"></div>
+                    <div class="middleLayer"></div>
+                    <div class="innerLayer"></div>
+                </div>
+                <div class="bottomLayer">
+                    <div class="legWear"></div>
+                </div>
+                <div class="footwear">
+                    <div class="socks"></div>
+                    <div class="shoes"></div>
+                </div>
+            </secton>
+        </main>
+    </div>
+    <script src="main.js"></script>
+    <script src="TopLayer.js"></script>
+    <script src="BottomLayer.js"></script>
+    <script src="SocksShoes.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url('yourname2.jpg');
+    background-size: 2100px;
+    background-position: top center;
+    color: white;
+}
+
+.app-wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6));
+    
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 15px 15px;
+}
+
+header h1 {
+    font-size: 120px;
+    font-weight: lighter; 
+}
+
+header input {
+    width: 100%;
+    max-width: 280px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px 10px 10px 10px;
+    border-bottom: 3px solid rgb(93, 205, 253);
+    color: #313131;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    transition: 0.2s ease-out;
+}
+
+header input:focus {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+main {
+    flex: 1 1 100%;
+    padding: 10px 25px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.location .city {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.location .date {
+    font-size: 16px;
+}
+
+.today .temp {
+    font-size: 102px;
+    font-weight: 900;
+    text-shadow: 5px 8px rgba(0,0,0,0.6);
+}
+
+.today .temp span {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.today .hi-low {
+    font-size: 12px;
+    margin: -10px 0px;
+    font-weight: 500;
+    text-shadow: 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.outfit {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.outfit .topLayers, .bottomLayer, .footwear {
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px 10px 10px 10px;
+    border-bottom: 3px solid rgb(93, 205, 253);
+    width: 400px;
+    height: 300px;
+    margin: 30px;
+    font-size: 14px;
+}
+
+.outfit .topLayers:hover, .bottomLayer:hover, .footwear:hover {
+    background-image: none !important;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.outfit .topLayers {
+    background-image: url('icons8-clothes-100.png');
+    column-count: 3;   
+    column-gap: 1px;
+}
+
+.outfit .bottomLayer {
+    background-image: url('icons8-jeans-100.png');
+}
+
+.outfit .footwear {
+    background-image: url('icons8-sneakers-100.png');
+    column-count: 2;
+}
+
+.outfit .outerLayer, .middleLayer, .innerLayer, .legWear, .socks, .shoes {
+    visibility: hidden;
+    padding-top: 120px;
+}
+
+.outfit .topLayers:hover .outerLayer,
+.topLayers:hover .middleLayer,
+.topLayers:hover .innerLayer,
+.bottomLayer:hover .legWear,
+.footwear:hover .socks,
+.footwear:hover .shoes {
+    visibility: visible;
+}
